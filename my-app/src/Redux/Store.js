@@ -1,10 +1,10 @@
-import {configureStore} from "@reduxjs/toolkit";
-import {crereducer} from "./Reducer"
+import {configureStore} from '@reduxjs/toolkit'
+import regsterSlice  from './Reducer'
+
 const store = configureStore({
-  reducer:{
-    todoget : crereducer
-  },
+    reducer:{
+       posts: regsterSlice
+    }
 })
 
-
- export default store
+export default store

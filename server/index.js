@@ -2,7 +2,17 @@ const express = require('express')
 const mongoose = require('mongoose');
 var cors = require('cors');
 const bodyParser = require('body-parser');
-const todo = require('./routes/RouterTodo')
+const regster = require('./routes/RouterUser')
+const Poset = require('./routes/routerPo')
+const http = require('http')
+
+const errorMiddleware = require("./middleware/error");
+var fileupload = require("express-fileupload");
+
+
+
+
+
 
 //const mobile = require("./models/post")
 //const gameModule = require("./models/game")
@@ -12,6 +22,7 @@ const todo = require('./routes/RouterTodo')
 const app = express()
 
 app.use(cors());
+app.use(fileupload());
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -28,18 +39,12 @@ mongoose.connect(uri, {
 
 const port = 5000
 
+const server = http.createServer(app)
 
+app.use(regster);
+app.use(Poset);
 
-
-app.use(todo);
-
-app.post("/set", async (req, res) =>{
-  console.log(req.body)
-})
-
-
-
-
-app.listen(port, () => {
+app.use(errorMiddleware);
+server.listen(port, () => {
   console.log(`Server is runing ${port}`)
 })

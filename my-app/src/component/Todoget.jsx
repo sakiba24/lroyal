@@ -61,8 +61,9 @@ const [id,setid] = useState('')
             <td>{val.fname}</td>
             <td>{val.lname}</td>
             <td>{val.age}</td>
-            <td onClick={()=>deletename(val._id)}>delete</td>
-            <td onClick={()=>edite(val)}>edit </td>
+            <td> <p onClick={()=>deletename(val._id)}>delete</p>
+            <p onClick={()=>edite(val)}>edit </p> 
+            </td>
             
         </tr>
         ))}

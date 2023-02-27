@@ -1,13 +1,35 @@
-import { useState } from 'react'
-import AddName from './component/AddName'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import SignUp from './component/Regster'
+import Login from './component/Login'
+import Menu from './component/Menu'
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Menu />,
+    
+  },
+{
+   path: '/regster',
+    element : <SignUp />
+  },{
+    path: '/login',
+    element: <Login />
+  }
+]);
 
 function App() {
+  
   return (
-    <div>
-      <h1>hello sisir</h1>
-      <AddName />
-    </div>
-  )
+    <>
+ <RouterProvider router={router} />
+   
+    </>
+     )
 }
 
 export default App

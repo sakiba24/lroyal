@@ -1,0 +1,101 @@
+# npm resolution error report
+
+2023-02-17T17:15:08.392Z
+
+While resolving: my-app@0.0.0
+Found: react@18.2.0
+node_modules/react
+  react@"^18.2.0" from the root project
+
+Could not resolve dependency:
+peer react@"^16.8.0 || ^17.0.0" from @material-ui/core@4.12.4
+node_modules/@material-ui/core
+  peer @material-ui/core@"^4.0.0" from @material-ui/icons@4.11.3
+  node_modules/@material-ui/icons
+    @material-ui/icons@"*" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "current": {
+    "name": "react",
+    "version": "18.2.0",
+    "whileInstalling": {
+      "name": "my-app",
+      "version": "0.0.0",
+      "path": "/data/data/com.termux/files/home/my-app"
+    },
+    "location": "node_modules/react",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "react",
+        "spec": "^18.2.0",
+        "from": {
+          "location": "/data/data/com.termux/files/home/my-app"
+        }
+      }
+    ]
+  },
+  "currentEdge": {
+    "type": "prod",
+    "name": "react",
+    "spec": "^18.2.0",
+    "from": {
+      "location": "/data/data/com.termux/files/home/my-app"
+    }
+  },
+  "edge": {
+    "type": "peer",
+    "name": "react",
+    "spec": "^16.8.0 || ^17.0.0",
+    "error": "INVALID",
+    "from": {
+      "name": "@material-ui/core",
+      "version": "4.12.4",
+      "whileInstalling": {
+        "name": "my-app",
+        "version": "0.0.0",
+        "path": "/data/data/com.termux/files/home/my-app"
+      },
+      "location": "node_modules/@material-ui/core",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "peer",
+          "name": "@material-ui/core",
+          "spec": "^4.0.0",
+          "from": {
+            "name": "@material-ui/icons",
+            "version": "4.11.3",
+            "whileInstalling": {
+              "name": "my-app",
+              "version": "0.0.0",
+              "path": "/data/data/com.termux/files/home/my-app"
+            },
+            "location": "node_modules/@material-ui/icons",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "@material-ui/icons",
+                "spec": "*",
+                "from": {
+                  "location": "/data/data/com.termux/files/home/my-app"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strictPeerDeps": false,
+  "force": false
+}

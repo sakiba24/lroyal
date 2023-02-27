@@ -1,0 +1,596 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@8.19.2
+2 info using node@v18.12.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 10ms
+5 timing config:load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 10ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/data/data/com.termux/files/home/server/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 53ms
+11 timing config:load:file:/data/data/com.termux/files/home/.npmrc Completed in 5ms
+12 timing config:load:user Completed in 7ms
+13 timing config:load:file:/data/data/com.termux/files/usr/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 2ms
+16 timing config:load:credentials Completed in 7ms
+17 timing config:load:setEnvs Completed in 5ms
+18 timing config:load Completed in 104ms
+19 timing npm:load:configload Completed in 104ms
+20 timing npm:load:mkdirpcache Completed in 4ms
+21 timing npm:load:mkdirplogs Completed in 2ms
+22 verbose title npm i bcrypt
+23 verbose argv "i" "bcrypt"
+24 timing npm:load:setTitle Completed in 7ms
+25 timing config:load:flatten Completed in 16ms
+26 timing npm:load:display Completed in 26ms
+27 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs
+28 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2023-02-23T15_46_10_687Z-debug-0.log
+29 timing npm:load:logFile Completed in 35ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 1ms
+32 timing npm:load Completed in 183ms
+33 timing arborist:ctor Completed in 5ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 1196ms
+37 timing idealTree:userRequests Completed in 12ms
+38 silly idealTree buildDeps
+39 silly fetch manifest bcrypt@*
+40 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+41 http fetch GET 200 https://registry.npmjs.org/bcrypt 1794ms (cache revalidated)
+42 silly placeDep ROOT bcrypt@5.1.0 OK for: server@1.0.0 want: *
+43 silly fetch manifest @mapbox/node-pre-gyp@^1.0.10
+44 silly fetch manifest node-addon-api@^5.0.0
+45 http fetch GET 200 https://registry.npmjs.org/node-addon-api 376ms (cache revalidated)
+46 http fetch GET 200 https://registry.npmjs.org/@mapbox%2fnode-pre-gyp 2187ms (cache revalidated)
+47 timing idealTree:#root Completed in 4045ms
+48 silly placeDep ROOT @mapbox/node-pre-gyp@1.0.10 OK for: bcrypt@5.1.0 want: ^1.0.10
+49 silly placeDep ROOT node-addon-api@5.1.0 OK for: bcrypt@5.1.0 want: ^5.0.0
+50 silly fetch manifest detect-libc@^2.0.0
+51 silly fetch manifest https-proxy-agent@^5.0.0
+52 silly fetch manifest make-dir@^3.1.0
+53 silly fetch manifest node-fetch@^2.6.7
+54 silly fetch manifest nopt@^5.0.0
+55 silly fetch manifest npmlog@^5.0.1
+56 silly fetch manifest rimraf@^3.0.2
+57 silly fetch manifest semver@^7.3.5
+58 silly fetch manifest tar@^6.1.11
+59 http fetch GET 200 https://registry.npmjs.org/detect-libc 287ms (cache revalidated)
+60 http fetch GET 200 https://registry.npmjs.org/make-dir 722ms (cache revalidated)
+61 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 733ms (cache revalidated)
+62 http fetch GET 200 https://registry.npmjs.org/npmlog 767ms (cache revalidated)
+63 http fetch GET 200 https://registry.npmjs.org/node-fetch 1309ms (cache revalidated)
+64 http fetch GET 200 https://registry.npmjs.org/nopt 1341ms (cache revalidated)
+65 http fetch GET 200 https://registry.npmjs.org/rimraf 1365ms (cache revalidated)
+66 http fetch GET 200 https://registry.npmjs.org/semver 1373ms (cache revalidated)
+67 http fetch GET 200 https://registry.npmjs.org/tar 2243ms (cache revalidated)
+68 timing idealTree:node_modules/bcrypt Completed in 2319ms
+69 silly fetch manifest encoding@^0.1.0
+70 http fetch GET 200 https://registry.npmjs.org/encoding 94ms (cache revalidated)
+71 silly placeDep ROOT detect-libc@2.0.1 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^2.0.0
+72 silly placeDep ROOT https-proxy-agent@5.0.1 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^5.0.0
+73 silly placeDep ROOT make-dir@3.1.0 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^3.1.0
+74 silly placeDep ROOT node-fetch@2.6.9 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^2.6.7
+75 silly placeDep node_modules/@mapbox/node-pre-gyp nopt@5.0.0 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^5.0.0
+76 silly placeDep ROOT npmlog@5.0.1 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^5.0.1
+77 silly placeDep ROOT rimraf@3.0.2 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^3.0.2
+78 silly placeDep node_modules/@mapbox/node-pre-gyp semver@7.3.8 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^7.3.5
+79 silly placeDep ROOT tar@6.1.13 OK for: @mapbox/node-pre-gyp@1.0.10 want: ^6.1.11
+80 silly fetch manifest agent-base@6
+81 silly fetch manifest debug@4
+82 silly fetch manifest semver@^6.0.0
+83 silly fetch manifest whatwg-url@^5.0.0
+84 silly fetch manifest are-we-there-yet@^2.0.0
+85 silly fetch manifest console-control-strings@^1.1.0
+86 silly fetch manifest gauge@^3.0.0
+87 silly fetch manifest set-blocking@^2.0.0
+88 silly fetch manifest glob@^7.1.3
+89 silly fetch manifest chownr@^2.0.0
+90 silly fetch manifest fs-minipass@^2.0.0
+91 silly fetch manifest minipass@^4.0.0
+92 silly fetch manifest minizlib@^2.1.1
+93 silly fetch manifest mkdirp@^1.0.3
+94 http fetch GET 200 https://registry.npmjs.org/console-control-strings 359ms (cache revalidated)
+95 http fetch GET 200 https://registry.npmjs.org/debug 372ms (cache revalidated)
+96 http fetch GET 200 https://registry.npmjs.org/agent-base 383ms (cache revalidated)
+97 http fetch GET 200 https://registry.npmjs.org/glob 370ms (cache revalidated)
+98 http fetch GET 200 https://registry.npmjs.org/are-we-there-yet 406ms (cache revalidated)
+99 http fetch GET 200 https://registry.npmjs.org/minizlib 382ms (cache revalidated)
+100 http fetch GET 200 https://registry.npmjs.org/gauge 411ms (cache revalidated)
+101 http fetch GET 200 https://registry.npmjs.org/minipass 404ms (cache revalidated)
+102 http fetch GET 200 https://registry.npmjs.org/mkdirp 453ms (cache revalidated)
+103 http fetch GET 200 https://registry.npmjs.org/set-blocking 488ms (cache revalidated)
+104 http fetch GET 200 https://registry.npmjs.org/fs-minipass 481ms (cache revalidated)
+105 http fetch GET 200 https://registry.npmjs.org/chownr 497ms (cache revalidated)
+106 http fetch GET 200 https://registry.npmjs.org/whatwg-url 515ms (cache revalidated)
+107 timing idealTree:node_modules/@mapbox/node-pre-gyp Completed in 745ms
+108 timing idealTree:node_modules/detect-libc Completed in 1ms
+109 silly placeDep ROOT agent-base@6.0.2 OK for: https-proxy-agent@5.0.1 want: 6
+110 silly placeDep node_modules/https-proxy-agent debug@4.3.4 OK for: https-proxy-agent@5.0.1 want: 4
+111 silly fetch manifest ms@2.1.2
+112 http fetch GET 200 https://registry.npmjs.org/ms 82ms (cache revalidated)
+113 timing idealTree:node_modules/https-proxy-agent Completed in 112ms
+114 silly placeDep node_modules/agent-base debug@4.3.4 OK for: agent-base@6.0.2 want: 4
+115 timing idealTree:node_modules/agent-base Completed in 7ms
+116 silly placeDep node_modules/make-dir semver@6.3.0 OK for: make-dir@3.1.0 want: ^6.0.0
+117 timing idealTree:node_modules/make-dir Completed in 8ms
+118 timing idealTree:node_modules/node-addon-api Completed in 2ms
+119 silly placeDep node_modules/node-fetch whatwg-url@5.0.0 OK for: node-fetch@2.6.9 want: ^5.0.0
+120 silly fetch manifest tr46@~0.0.3
+121 silly fetch manifest webidl-conversions@^3.0.0
+122 http fetch GET 200 https://registry.npmjs.org/tr46 434ms (cache revalidated)
+123 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 1214ms (cache revalidated)
+124 timing idealTree:node_modules/node-fetch Completed in 1242ms
+125 silly placeDep ROOT are-we-there-yet@2.0.0 OK for: npmlog@5.0.1 want: ^2.0.0
+126 silly placeDep ROOT console-control-strings@1.1.0 OK for: npmlog@5.0.1 want: ^1.1.0
+127 silly placeDep ROOT gauge@3.0.2 OK for: npmlog@5.0.1 want: ^3.0.0
+128 silly placeDep ROOT set-blocking@2.0.0 OK for: npmlog@5.0.1 want: ^2.0.0
+129 silly fetch manifest delegates@^1.0.0
+130 silly fetch manifest readable-stream@^3.6.0
+131 silly fetch manifest aproba@^1.0.3 || ^2.0.0
+132 silly fetch manifest color-support@^1.1.2
+133 silly fetch manifest has-unicode@^2.0.1
+134 silly fetch manifest signal-exit@^3.0.0
+135 silly fetch manifest string-width@^4.2.3
+136 silly fetch manifest strip-ansi@^6.0.1
+137 silly fetch manifest wide-align@^1.1.2
+138 http fetch GET 200 https://registry.npmjs.org/delegates 187ms (cache revalidated)
+139 http fetch GET 200 https://registry.npmjs.org/signal-exit 173ms (cache revalidated)
+140 http fetch GET 200 https://registry.npmjs.org/aproba 205ms (cache revalidated)
+141 http fetch GET 200 https://registry.npmjs.org/string-width 224ms (cache revalidated)
+142 http fetch GET 200 https://registry.npmjs.org/has-unicode 241ms (cache revalidated)
+143 http fetch GET 200 https://registry.npmjs.org/strip-ansi 226ms (cache revalidated)
+144 http fetch GET 200 https://registry.npmjs.org/color-support 617ms (cache revalidated)
+145 http fetch GET 200 https://registry.npmjs.org/readable-stream 920ms (cache revalidated)
+146 http fetch GET 200 https://registry.npmjs.org/wide-align 1574ms (cache revalidated)
+147 timing idealTree:node_modules/npmlog Completed in 1688ms
+148 silly placeDep ROOT delegates@1.0.0 OK for: are-we-there-yet@2.0.0 want: ^1.0.0
+149 silly placeDep ROOT readable-stream@3.6.1 OK for: are-we-there-yet@2.0.0 want: ^3.6.0
+150 silly fetch manifest string_decoder@^1.1.1
+151 silly fetch manifest util-deprecate@^1.0.1
+152 http fetch GET 200 https://registry.npmjs.org/util-deprecate 96ms (cache revalidated)
+153 http fetch GET 200 https://registry.npmjs.org/string_decoder 144ms (cache revalidated)
+154 timing idealTree:node_modules/are-we-there-yet Completed in 183ms
+155 timing idealTree:node_modules/console-control-strings Completed in 0ms
+156 timing idealTree:node_modules/delegates Completed in 0ms
+157 silly placeDep ROOT aproba@2.0.0 OK for: gauge@3.0.2 want: ^1.0.3 || ^2.0.0
+158 silly placeDep ROOT color-support@1.1.3 OK for: gauge@3.0.2 want: ^1.1.2
+159 silly placeDep ROOT has-unicode@2.0.1 OK for: gauge@3.0.2 want: ^2.0.1
+160 silly placeDep ROOT signal-exit@3.0.7 OK for: gauge@3.0.2 want: ^3.0.0
+161 silly placeDep ROOT string-width@4.2.3 OK for: gauge@3.0.2 want: ^4.2.3
+162 silly placeDep ROOT strip-ansi@6.0.1 OK for: gauge@3.0.2 want: ^6.0.1
+163 silly placeDep ROOT wide-align@1.1.5 OK for: gauge@3.0.2 want: ^1.1.2
+164 silly fetch manifest emoji-regex@^8.0.0
+165 silly fetch manifest is-fullwidth-code-point@^3.0.0
+166 silly fetch manifest ansi-regex@^5.0.1
+167 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 198ms (cache revalidated)
+168 http fetch GET 200 https://registry.npmjs.org/ansi-regex 212ms (cache revalidated)
+169 http fetch GET 200 https://registry.npmjs.org/emoji-regex 495ms (cache revalidated)
+170 timing idealTree:node_modules/gauge Completed in 566ms
+171 timing idealTree:node_modules/aproba Completed in 0ms
+172 timing idealTree:node_modules/color-support Completed in 0ms
+173 timing idealTree:node_modules/has-unicode Completed in 1ms
+174 silly placeDep ROOT string_decoder@1.3.0 OK for: readable-stream@3.6.1 want: ^1.1.1
+175 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@3.6.1 want: ^1.0.1
+176 timing idealTree:node_modules/readable-stream Completed in 27ms
+177 silly placeDep ROOT glob@7.2.3 OK for: rimraf@3.0.2 want: ^7.1.3
+178 silly fetch manifest fs.realpath@^1.0.0
+179 silly fetch manifest inflight@^1.0.4
+180 silly fetch manifest once@^1.3.0
+181 silly fetch manifest path-is-absolute@^1.0.0
+182 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 132ms (cache revalidated)
+183 http fetch GET 200 https://registry.npmjs.org/once 143ms (cache revalidated)
+184 http fetch GET 200 https://registry.npmjs.org/inflight 154ms (cache revalidated)
+185 http fetch GET 200 https://registry.npmjs.org/fs.realpath 172ms (cache revalidated)
+186 timing idealTree:node_modules/rimraf Completed in 201ms
+187 silly placeDep ROOT fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+188 silly placeDep ROOT inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+189 silly placeDep ROOT once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+190 silly placeDep ROOT path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+191 silly fetch manifest wrappy@1
+192 http fetch GET 200 https://registry.npmjs.org/wrappy 124ms (cache revalidated)
+193 timing idealTree:node_modules/glob Completed in 157ms
+194 timing idealTree:node_modules/fs.realpath Completed in 0ms
+195 silly placeDep ROOT wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+196 timing idealTree:node_modules/inflight Completed in 9ms
+197 timing idealTree:node_modules/once Completed in 0ms
+198 timing idealTree:node_modules/path-is-absolute Completed in 0ms
+199 timing idealTree:node_modules/set-blocking Completed in 0ms
+200 timing idealTree:node_modules/signal-exit Completed in 0ms
+201 timing idealTree:node_modules/string_decoder Completed in 0ms
+202 silly placeDep ROOT emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+203 silly placeDep ROOT is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+204 timing idealTree:node_modules/string-width Completed in 17ms
+205 timing idealTree:node_modules/emoji-regex Completed in 0ms
+206 timing idealTree:node_modules/is-fullwidth-code-point Completed in 0ms
+207 silly placeDep ROOT ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+208 timing idealTree:node_modules/strip-ansi Completed in 6ms
+209 timing idealTree:node_modules/ansi-regex Completed in 0ms
+210 silly placeDep ROOT chownr@2.0.0 OK for: tar@6.1.13 want: ^2.0.0
+211 silly placeDep ROOT fs-minipass@2.1.0 OK for: tar@6.1.13 want: ^2.0.0
+212 silly placeDep ROOT minipass@4.2.0 OK for: tar@6.1.13 want: ^4.0.0
+213 silly placeDep ROOT minizlib@2.1.2 OK for: tar@6.1.13 want: ^2.1.1
+214 silly placeDep ROOT mkdirp@1.0.4 OK for: tar@6.1.13 want: ^1.0.3
+215 silly fetch manifest minipass@^3.0.0
+216 timing idealTree:node_modules/tar Completed in 48ms
+217 timing idealTree:node_modules/chownr Completed in 0ms
+218 silly placeDep node_modules/fs-minipass minipass@3.3.6 OK for: fs-minipass@2.1.0 want: ^3.0.0
+219 timing idealTree:node_modules/fs-minipass Completed in 8ms
+220 timing idealTree:node_modules/minipass Completed in 0ms
+221 silly placeDep node_modules/minizlib minipass@3.3.6 OK for: minizlib@2.1.2 want: ^3.0.0
+222 timing idealTree:node_modules/minizlib Completed in 7ms
+223 timing idealTree:node_modules/mkdirp Completed in 0ms
+224 timing idealTree:node_modules/util-deprecate Completed in 0ms
+225 timing idealTree:node_modules/wide-align Completed in 0ms
+226 timing idealTree:node_modules/wrappy Completed in 0ms
+227 timing idealTree:node_modules/@mapbox/node-pre-gyp/node_modules/nopt Completed in 0ms
+228 timing idealTree:node_modules/@mapbox/node-pre-gyp/node_modules/semver Completed in 0ms
+229 silly placeDep node_modules/agent-base ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+230 timing idealTree:node_modules/agent-base/node_modules/debug Completed in 8ms
+231 timing idealTree:node_modules/agent-base/node_modules/ms Completed in 1ms
+232 timing idealTree:node_modules/fs-minipass/node_modules/minipass Completed in 0ms
+233 silly placeDep node_modules/https-proxy-agent ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+234 timing idealTree:node_modules/https-proxy-agent/node_modules/debug Completed in 8ms
+235 timing idealTree:node_modules/https-proxy-agent/node_modules/ms Completed in 0ms
+236 timing idealTree:node_modules/make-dir/node_modules/semver Completed in 0ms
+237 timing idealTree:node_modules/minizlib/node_modules/minipass Completed in 0ms
+238 silly placeDep node_modules/node-fetch tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+239 silly placeDep node_modules/node-fetch webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+240 timing idealTree:node_modules/node-fetch/node_modules/whatwg-url Completed in 16ms
+241 timing idealTree:node_modules/node-fetch/node_modules/tr46 Completed in 0ms
+242 timing idealTree:node_modules/node-fetch/node_modules/webidl-conversions Completed in 0ms
+243 timing idealTree:buildDeps Completed in 11471ms
+244 timing idealTree:fixDepFlags Completed in 22ms
+245 timing idealTree Completed in 12727ms
+246 timing reify:loadTrees Completed in 12732ms
+247 timing reify:diffTrees Completed in 45ms
+248 silly reify moves {}
+249 timing reify:retireShallow Completed in 6ms
+250 timing reify:createSparse Completed in 57ms
+251 timing reify:loadBundles Completed in 0ms
+252 silly audit bulk request {
+252 silly audit   '@aws-crypto/ie11-detection': [ '2.0.2' ],
+252 silly audit   tslib: [ '1.14.1', '2.4.1' ],
+252 silly audit   '@aws-crypto/sha256-browser': [ '2.0.0' ],
+252 silly audit   '@aws-crypto/sha256-js': [ '2.0.0' ],
+252 silly audit   '@aws-crypto/supports-web-crypto': [ '2.0.2' ],
+252 silly audit   '@aws-crypto/util': [ '2.0.2' ],
+252 silly audit   '@aws-sdk/abort-controller': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/client-cognito-identity': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/client-sso': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/client-sso-oidc': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/client-sts': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/config-resolver': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/credential-provider-cognito-identity': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/credential-provider-env': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/credential-provider-imds': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/credential-provider-ini': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/credential-provider-node': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/credential-provider-process': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/credential-provider-sso': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/credential-provider-web-identity': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/credential-providers': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/fetch-http-handler': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/hash-node': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/invalid-dependency': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/is-array-buffer': [ '3.201.0' ],
+252 silly audit   '@aws-sdk/middleware-content-length': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-endpoint': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-host-header': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-logger': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-recursion-detection': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-retry': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/middleware-sdk-sts': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-serde': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-signing': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-stack': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/middleware-user-agent': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/node-config-provider': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/node-http-handler': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/property-provider': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/protocol-http': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/querystring-builder': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/querystring-parser': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/service-error-classification': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/shared-ini-file-loader': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/signature-v4': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/smithy-client': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/token-providers': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/types': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/url-parser': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-base64': [ '3.208.0' ],
+252 silly audit   '@aws-sdk/util-body-length-browser': [ '3.188.0' ],
+252 silly audit   '@aws-sdk/util-body-length-node': [ '3.208.0' ],
+252 silly audit   '@aws-sdk/util-buffer-from': [ '3.208.0' ],
+252 silly audit   '@aws-sdk/util-config-provider': [ '3.208.0' ],
+252 silly audit   '@aws-sdk/util-defaults-mode-browser': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-defaults-mode-node': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-endpoints': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-hex-encoding': [ '3.201.0' ],
+252 silly audit   '@aws-sdk/util-locate-window': [ '3.208.0' ],
+252 silly audit   '@aws-sdk/util-middleware': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-retry': [ '3.229.0' ],
+252 silly audit   '@aws-sdk/util-uri-escape': [ '3.201.0' ],
+252 silly audit   '@aws-sdk/util-user-agent-browser': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-user-agent-node': [ '3.226.0' ],
+252 silly audit   '@aws-sdk/util-utf8-browser': [ '3.188.0' ],
+252 silly audit   '@aws-sdk/util-utf8-node': [ '3.208.0' ],
+252 silly audit   '@socket.io/component-emitter': [ '3.1.0' ],
+252 silly audit   '@types/cookie': [ '0.4.1' ],
+252 silly audit   '@types/cors': [ '2.8.13' ],
+252 silly audit   '@types/node': [ '18.11.14' ],
+252 silly audit   '@types/webidl-conversions': [ '7.0.0' ],
+252 silly audit   '@types/whatwg-url': [ '8.2.2' ],
+252 silly audit   abbrev: [ '1.1.1' ],
+252 silly audit   accepts: [ '1.3.8' ],
+252 silly audit   anymatch: [ '3.1.3' ],
+252 silly audit   'array-flatten': [ '1.1.1' ],
+252 silly audit   'balanced-match': [ '1.0.2' ],
+252 silly audit   'base64-js': [ '1.5.1' ],
+252 silly audit   base64id: [ '2.0.0' ],
+252 silly audit   'binary-extensions': [ '2.2.0' ],
+252 silly audit   'body-parser': [ '1.20.1' ],
+252 silly audit   bowser: [ '2.11.0' ],
+252 silly audit   'brace-expansion': [ '1.1.11' ],
+252 silly audit   braces: [ '3.0.2' ],
+252 silly audit   bson: [ '4.7.0' ],
+252 silly audit   buffer: [ '5.7.1' ],
+252 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+252 silly audit   bytes: [ '3.1.2' ],
+252 silly audit   'call-bind': [ '1.0.2' ],
+252 silly audit   chokidar: [ '3.5.3' ],
+252 silly audit   'concat-map': [ '0.0.1' ],
+252 silly audit   'content-disposition': [ '0.5.4' ],
+252 silly audit   'content-type': [ '1.0.4' ],
+252 silly audit   cookie: [ '0.5.0', '0.4.2' ],
+252 silly audit   'cookie-signature': [ '1.0.6' ],
+252 silly audit   cors: [ '2.8.5' ],
+252 silly audit   debug: [ '2.6.9', '4.3.4', '3.2.7' ],
+252 silly audit   depd: [ '2.0.0' ],
+252 silly audit   destroy: [ '1.2.0' ],
+252 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+252 silly audit   'ee-first': [ '1.1.1' ],
+252 silly audit   encodeurl: [ '1.0.2' ],
+252 silly audit   'engine.io': [ '6.2.1' ],
+252 silly audit   'engine.io-parser': [ '5.0.4' ],
+252 silly audit   ms: [ '2.1.2', '2.1.3', '2.0.0' ],
+252 silly audit   'escape-html': [ '1.0.3' ],
+252 silly audit   etag: [ '1.8.1' ],
+252 silly audit   express: [ '4.18.2' ],
+252 silly audit   'fast-xml-parser': [ '4.0.11' ],
+252 silly audit   'fill-range': [ '7.0.1' ],
+252 silly audit   finalhandler: [ '1.2.0' ],
+252 silly audit   forwarded: [ '0.2.0' ],
+252 silly audit   fresh: [ '0.5.2' ],
+252 silly audit   fsevents: [ '2.3.2' ],
+252 silly audit   'function-bind': [ '1.1.1' ],
+252 silly audit   'get-intrinsic': [ '1.1.3' ],
+252 silly audit   'glob-parent': [ '5.1.2' ],
+252 silly audit   has: [ '1.0.3' ],
+252 silly audit   'has-flag': [ '3.0.0' ],
+252 silly audit   'has-symbols': [ '1.0.3' ],
+252 silly audit   'http-errors': [ '2.0.0' ],
+252 silly audit   'iconv-lite': [ '0.4.24' ],
+252 silly audit   ieee754: [ '1.2.1' ],
+252 silly audit   'ignore-by-default': [ '1.0.1' ],
+252 silly audit   inherits: [ '2.0.4' ],
+252 silly audit   ip: [ '2.0.0' ],
+252 silly audit   'ipaddr.js': [ '1.9.1' ],
+252 silly audit   'is-binary-path': [ '2.1.0' ],
+252 silly audit   'is-extglob': [ '2.1.1' ],
+252 silly audit   'is-glob': [ '4.0.3' ],
+252 silly audit   'is-number': [ '7.0.0' ],
+252 silly audit   jsonwebtoken: [ '9.0.0' ],
+252 silly audit   semver: [ '7.3.8', '5.7.1', '7.0.0', '6.3.0' ],
+252 silly audit   jwa: [ '1.4.1' ],
+252 silly audit   jws: [ '3.2.2' ],
+252 silly audit   kareem: [ '2.5.0' ],
+252 silly audit   lodash: [ '4.17.21' ],
+252 silly audit   'lru-cache': [ '6.0.0' ],
+252 silly audit   'media-typer': [ '0.3.0' ],
+252 silly audit   'memory-pager': [ '1.5.0' ],
+252 silly audit   'merge-descriptors': [ '1.0.1' ],
+252 silly audit   methods: [ '1.1.2' ],
+252 silly audit   mime: [ '1.6.0' ],
+252 silly audit   'mime-db': [ '1.52.0' ],
+252 silly audit   'mime-types': [ '2.1.35' ],
+252 silly audit   minimatch: [ '3.1.2' ],
+252 silly audit   mongodb: [ '4.12.1' ],
+252 silly audit   'mongodb-connection-string-url': [ '2.6.0' ],
+252 silly audit   mongoose: [ '6.8.0' ],
+252 silly audit   mpath: [ '0.9.0' ],
+252 silly audit   mquery: [ '4.0.3' ],
+252 silly audit   negotiator: [ '0.6.3' ],
+252 silly audit   nodemon: [ '2.0.20' ],
+252 silly audit   nopt: [ '1.0.10', '5.0.0' ],
+252 silly audit   'normalize-path': [ '3.0.0' ],
+252 silly audit   'object-assign': [ '4.1.1' ],
+252 silly audit   'object-inspect': [ '1.12.2' ],
+252 silly audit   'on-finished': [ '2.4.1' ],
+252 silly audit   parseurl: [ '1.3.3' ],
+252 silly audit   'path-to-regexp': [ '0.1.7' ],
+252 silly audit   picomatch: [ '2.3.1' ],
+252 silly audit   'proxy-addr': [ '2.0.7' ],
+252 silly audit   'pstree.remy': [ '1.1.8' ],
+252 silly audit   punycode: [ '2.1.1' ],
+252 silly audit   python: [ '0.0.4' ],
+252 silly audit   qs: [ '6.11.0' ],
+252 silly audit   'range-parser': [ '1.2.1' ],
+252 silly audit   'raw-body': [ '2.5.1' ],
+252 silly audit   readdirp: [ '3.6.0' ],
+252 silly audit   'safe-buffer': [ '5.2.1' ],
+252 silly audit   'safer-buffer': [ '2.1.2' ],
+252 silly audit   saslprep: [ '1.0.3' ],
+252 silly audit   send: [ '0.18.0' ],
+252 silly audit   'serve-static': [ '1.15.0' ],
+252 silly audit   setprototypeof: [ '1.2.0' ],
+252 silly audit   'side-channel': [ '1.0.4' ],
+252 silly audit   sift: [ '16.0.1' ],
+252 silly audit   'simple-update-notifier': [ '1.1.0' ],
+252 silly audit   'smart-buffer': [ '4.2.0' ],
+252 silly audit   'socket.io': [ '4.5.4' ],
+252 silly audit   'socket.io-adapter': [ '2.4.0' ],
+252 silly audit   'socket.io-parser': [ '4.2.1' ],
+252 silly audit   socks: [ '2.7.1' ],
+252 silly audit   'sparse-bitfield': [ '3.0.3' ],
+252 silly audit   statuses: [ '2.0.1' ],
+252 silly audit   strnum: [ '1.0.5' ],
+252 silly audit   'supports-color': [ '5.5.0' ],
+252 silly audit   'to-regex-range': [ '5.0.1' ],
+252 silly audit   toidentifier: [ '1.0.1' ],
+252 silly audit   touch: [ '3.1.0' ],
+252 silly audit   tr46: [ '3.0.0', '0.0.3' ],
+252 silly audit   'type-is': [ '1.6.18' ],
+252 silly audit   undefsafe: [ '2.0.5' ],
+252 silly audit   unpipe: [ '1.0.0' ],
+252 silly audit   'utils-merge': [ '1.0.1' ],
+252 silly audit   uuid: [ '8.3.2' ],
+252 silly audit   vary: [ '1.1.2' ],
+252 silly audit   'webidl-conversions': [ '7.0.0', '3.0.1' ],
+252 silly audit   'whatwg-url': [ '11.0.0', '5.0.0' ],
+252 silly audit   ws: [ '8.2.3' ],
+252 silly audit   yallist: [ '4.0.0' ],
+252 silly audit   bcrypt: [ '5.1.0' ],
+252 silly audit   '@mapbox/node-pre-gyp': [ '1.0.10' ],
+252 silly audit   'node-addon-api': [ '5.1.0' ],
+252 silly audit   'detect-libc': [ '2.0.1' ],
+252 silly audit   'https-proxy-agent': [ '5.0.1' ],
+252 silly audit   'make-dir': [ '3.1.0' ],
+252 silly audit   'node-fetch': [ '2.6.9' ],
+252 silly audit   npmlog: [ '5.0.1' ],
+252 silly audit   rimraf: [ '3.0.2' ],
+252 silly audit   tar: [ '6.1.13' ],
+252 silly audit   'agent-base': [ '6.0.2' ],
+252 silly audit   'are-we-there-yet': [ '2.0.0' ],
+252 silly audit   'console-control-strings': [ '1.1.0' ],
+252 silly audit   gauge: [ '3.0.2' ],
+252 silly audit   'set-blocking': [ '2.0.0' ],
+252 silly audit   delegates: [ '1.0.0' ],
+252 silly audit   'readable-stream': [ '3.6.1' ],
+252 silly audit   aproba: [ '2.0.0' ],
+252 silly audit   'color-support': [ '1.1.3' ],
+252 silly audit   'has-unicode': [ '2.0.1' ],
+252 silly audit   'signal-exit': [ '3.0.7' ],
+252 silly audit   'string-width': [ '4.2.3' ],
+252 silly audit   'strip-ansi': [ '6.0.1' ],
+252 silly audit   'wide-align': [ '1.1.5' ],
+252 silly audit   string_decoder: [ '1.3.0' ],
+252 silly audit   'util-deprecate': [ '1.0.2' ],
+252 silly audit   glob: [ '7.2.3' ],
+252 silly audit   'fs.realpath': [ '1.0.0' ],
+252 silly audit   inflight: [ '1.0.6' ],
+252 silly audit   once: [ '1.4.0' ],
+252 silly audit   'path-is-absolute': [ '1.0.1' ],
+252 silly audit   wrappy: [ '1.0.2' ],
+252 silly audit   'emoji-regex': [ '8.0.0' ],
+252 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+252 silly audit   'ansi-regex': [ '5.0.1' ],
+252 silly audit   chownr: [ '2.0.0' ],
+252 silly audit   'fs-minipass': [ '2.1.0' ],
+252 silly audit   minipass: [ '4.2.0', '3.3.6' ],
+252 silly audit   minizlib: [ '2.1.2' ],
+252 silly audit   mkdirp: [ '1.0.4' ]
+252 silly audit }
+253 verbose reify failed optional dependency /data/data/com.termux/files/home/server/node_modules/fsevents
+254 silly reify mark deleted [ '/data/data/com.termux/files/home/server/node_modules/fsevents' ]
+255 timing reifyNode:node_modules/fsevents Completed in 75ms
+256 timing reifyNode:node_modules/chownr Completed in 996ms
+257 timing reifyNode:node_modules/wrappy Completed in 995ms
+258 timing reifyNode:node_modules/path-is-absolute Completed in 995ms
+259 timing reifyNode:node_modules/once Completed in 996ms
+260 timing reifyNode:node_modules/inflight Completed in 996ms
+261 timing reifyNode:node_modules/wide-align Completed in 995ms
+262 timing reifyNode:node_modules/has-unicode Completed in 995ms
+263 timing reifyNode:node_modules/agent-base/node_modules/ms Completed in 1005ms
+264 timing reifyNode:node_modules/https-proxy-agent/node_modules/ms Completed in 1004ms
+265 timing reifyNode:node_modules/ansi-regex Completed in 1026ms
+266 timing reifyNode:node_modules/is-fullwidth-code-point Completed in 1026ms
+267 timing reifyNode:node_modules/fs-minipass Completed in 1030ms
+268 timing reifyNode:node_modules/string-width Completed in 1023ms
+269 timing reifyNode:node_modules/strip-ansi Completed in 1024ms
+270 timing reifyNode:node_modules/aproba Completed in 1023ms
+271 timing reifyNode:node_modules/set-blocking Completed in 1022ms
+272 timing reifyNode:node_modules/console-control-strings Completed in 1022ms
+273 timing reifyNode:node_modules/signal-exit Completed in 1028ms
+274 timing reifyNode:node_modules/npmlog Completed in 1024ms
+275 timing reifyNode:node_modules/make-dir Completed in 1024ms
+276 timing reifyNode:node_modules/node-fetch/node_modules/webidl-conversions Completed in 1033ms
+277 timing reifyNode:node_modules/fs.realpath Completed in 1053ms
+278 timing reifyNode:node_modules/color-support Completed in 1049ms
+279 timing reifyNode:node_modules/util-deprecate Completed in 1054ms
+280 timing reifyNode:node_modules/string_decoder Completed in 1054ms
+281 timing reifyNode:node_modules/minizlib Completed in 1084ms
+282 timing reifyNode:node_modules/rimraf Completed in 1083ms
+283 timing reifyNode:node_modules/delegates Completed in 1099ms
+284 timing reifyNode:node_modules/detect-libc Completed in 1094ms
+285 timing reifyNode:node_modules/agent-base/node_modules/debug Completed in 1104ms
+286 timing reifyNode:node_modules/https-proxy-agent/node_modules/debug Completed in 1099ms
+287 timing reifyNode:node_modules/are-we-there-yet Completed in 1110ms
+288 timing reifyNode:node_modules/minizlib/node_modules/minipass Completed in 1150ms
+289 timing reifyNode:node_modules/fs-minipass/node_modules/minipass Completed in 1150ms
+290 timing reifyNode:node_modules/@mapbox/node-pre-gyp/node_modules/nopt Completed in 1130ms
+291 timing reifyNode:node_modules/glob Completed in 1147ms
+292 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1182ms
+293 timing auditReport:getReport Completed in 1222ms
+294 silly audit report {}
+295 timing auditReport:init Completed in 0ms
+296 timing reify:audit Completed in 1227ms
+297 timing reifyNode:node_modules/minipass Completed in 1170ms
+298 timing reifyNode:node_modules/emoji-regex Completed in 1166ms
+299 timing reifyNode:node_modules/make-dir/node_modules/semver Completed in 1162ms
+300 timing reifyNode:node_modules/node-fetch/node_modules/whatwg-url Completed in 1164ms
+301 timing reifyNode:node_modules/mkdirp Completed in 1189ms
+302 timing reifyNode:node_modules/https-proxy-agent Completed in 1191ms
+303 timing reifyNode:node_modules/agent-base Completed in 1220ms
+304 timing reifyNode:node_modules/node-fetch Completed in 1230ms
+305 timing reifyNode:node_modules/gauge Completed in 1258ms
+306 timing reifyNode:node_modules/node-fetch/node_modules/tr46 Completed in 1253ms
+307 timing reifyNode:node_modules/readable-stream Completed in 1348ms
+308 timing reifyNode:node_modules/tar Completed in 1365ms
+309 timing reifyNode:node_modules/node-addon-api Completed in 1362ms
+310 timing reifyNode:node_modules/bcrypt Completed in 1362ms
+311 timing reifyNode:node_modules/@mapbox/node-pre-gyp Completed in 1377ms
+312 timing reifyNode:node_modules/@mapbox/node-pre-gyp/node_modules/semver Completed in 1383ms
+313 timing reify:unpack Completed in 1411ms
+314 timing reify:unretire Completed in 2ms
+315 timing build:queue Completed in 17ms
+316 timing build:link:node_modules/@mapbox/node-pre-gyp Completed in 12ms
+317 timing build:link:node_modules/color-support Completed in 9ms
+318 timing build:link:node_modules/mkdirp Completed in 8ms
+319 timing build:link:node_modules/rimraf Completed in 8ms
+320 timing build:link:node_modules/@mapbox/node-pre-gyp/node_modules/nopt Completed in 20ms
+321 timing build:link:node_modules/@mapbox/node-pre-gyp/node_modules/semver Completed in 20ms
+322 timing build:link:node_modules/make-dir/node_modules/semver Completed in 20ms
+323 timing build:link Completed in 28ms
+324 info run bcrypt@5.1.0 install node_modules/bcrypt node-pre-gyp install --fallback-to-build
+325 info run bcrypt@5.1.0 install { code: 1, signal: null }
+326 timing reify:rollback:createSparse Completed in 280ms
+327 timing reify:rollback:retireShallow Completed in 0ms
+328 timing command:i Completed in 39490ms
+329 verbose stack Error: command failed
+329 verbose stack     at ChildProcess.<anonymous> (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:63:27)
+329 verbose stack     at ChildProcess.emit (node:events:513:28)
+329 verbose stack     at maybeClose (node:internal/child_process:1091:16)
+329 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:302:5)
+330 verbose pkgid bcrypt@5.1.0
+331 verbose cwd /data/data/com.termux/files/home/server
+332 verbose Linux 3.18.14-14381225-QB33002661
+333 verbose node v18.12.1
+334 verbose npm  v8.19.2
+335 error code 1
+336 error path /data/data/com.termux/files/home/server/node_modules/bcrypt
+337 error command failed
+338 error command sh -c -- node-pre-gyp install --fallback-to-build
+339 verbose exit 1
+340 timing npm Completed in 40241ms
+341 verbose unfinished npm timer reify 1677167171431
+342 verbose unfinished npm timer reify:build 1677167185814
+343 verbose unfinished npm timer build 1677167185817
+344 verbose unfinished npm timer build:deps 1677167185818
+345 verbose unfinished npm timer build:run:install 1677167185866
+346 verbose unfinished npm timer build:run:install:node_modules/bcrypt 1677167185868
+347 verbose code 1
+348 error A complete log of this run can be found in:
+348 error     /data/data/com.termux/files/home/.npm/_logs/2023-02-23T15_46_10_687Z-debug-0.log

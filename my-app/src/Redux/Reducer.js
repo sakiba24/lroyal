@@ -1,3 +1,125 @@
+import {createSlice } from '@reduxjs/toolkit'
+import {Regster} from './Api'
+
+const initialState = {
+    message:"",
+    error: ""
+}
+
+const regsterSlice = createSlice({
+  name: 'posts',
+  initialState,
+  reducers: {
+    // ==> normal reducer functions go here
+},
+  extraReducers(builder) {
+        builder
+            .addCase(Regster.pending, (state, action) => {
+                state.status = "loading"
+            })
+            .addCase(Regster.fulfilled, (state, action) => {
+              
+                state.message= action.payload
+            })
+            .addCase(Regster.rejected, (state, {error}) => {
+                console.log('xxx',error)
+                state.error = action.error.message
+            })
+            
+    }
+})
+
+
+export default regsterSlice.reducer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
+const data = JSON.parse(localStorage.getItem('order'))
+const init = data ? data : []
+
+export const tasksSlice  = createSlice({
+    name: 'tasks',
+    initialState:init,
+    
+    reducers:{
+        
+        addTask: (state, action)=>{
+            //state.order = action.payload
+            const newTask = {
+                id: Date.now(),
+                prosess_order: action.payload.order,
+                beyername:action.payload.bayer,
+                ITEM: [],
+            
+            }
+            const data = state.find((val)=>val.prosess_order == action.payload.order)
+            if(!data){
+                state.push(newTask)
+            }
+            
+            
+            localStorage.setItem('order', JSON.stringify(state));
+          //JSON.stringify(localStorage.setItem('order'[20,30,40])) 
+    },
+    deletereducer:(state, action)=>{
+      const data = state.filter((vals)=>vals.id !== action.payload)
+       
+    localStorage.setItem('order', JSON.stringify(data));
+    
+    return data
+    },
+    additem: (state, action)=>{
+      console.log(action)
+      let datafind = state.find((val)=>val.id == action.payload.id)
+      datafind.ITEM.push(action.payload)
+      localStorage.setItem('order', JSON.stringify(state));
+    }
+    
+}
+
+})
+
+export const {addTask,deletereducer,additem} = tasksSlice.actions;
+
+export default tasksSlice.reducer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import {createReducer, current} from "@reduxjs/toolkit"
 
 
@@ -29,7 +151,7 @@ Tododelete : (state, action) =>{
 
 
 
-/*
+
 import {createReducer, current} from "@reduxjs/toolkit"
 
 const int ={
